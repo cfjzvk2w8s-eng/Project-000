@@ -1,0 +1,91 @@
+GITHUB CONCEPTS: A GUIDE FOR NEW CONTRIBUTORS
+================================================
+
+This guide introduces core GitHub concepts in the order you need to
+learn them, each one building on the last.
+
+1. GIT
+------
+Git is the version control system that GitHub is built on top of. It
+runs on your own computer and tracks changes to files over time,
+independent of any hosting service. Everything below is a concept
+that exists inside Git, which GitHub then hosts and adds tools around.
+
+2. COMMIT
+---------
+A commit is a saved snapshot of your changes, along with a message
+describing what changed. Commits are the basic unit of history in
+Git: every change you want Git to remember becomes a commit, and a
+project's history is simply a sequence of commits.
+
+3. BRANCH
+---------
+A branch is an independent line of development made up of commits.
+Branching lets you make a series of commits — for example, to build a
+feature or fix a bug — without affecting other lines of work until
+you're ready to bring them together.
+
+4. MAIN
+-------
+Main is the name conventionally given to a repository's primary
+branch, usually representing the latest stable or released code.
+Other branches are typically created from main and, eventually,
+merged back into it.
+
+5. REMOTE
+---------
+So far, everything has happened on one computer. A remote is a
+version of the repository hosted elsewhere — most commonly on GitHub
+— that your local copy can send changes to or fetch changes from.
+This is what turns a personal Git history into something a team can
+share.
+
+6. REMOTE BRANCH
+----------------
+A remote branch is simply a branch that lives on the remote, as
+opposed to only on your local machine. When you create a branch
+locally and share it, it becomes a remote branch other people can see
+and work from too.
+
+7. PULL
+-------
+To pull is to download and merge changes from a remote branch into
+your local branch. This is how you bring in commits that other people
+have pushed to the remote since you last synced.
+
+8. BASE
+-------
+Base is a general term for the starting point that a set of changes
+is compared against, or built on top of. It's the reference point
+Git uses to figure out what's new.
+
+9. BASE BRANCH
+--------------
+A base branch applies that idea to merging: it's the branch that
+another branch's changes will be merged into — often main. When you
+propose to combine your work back into the project, you're proposing
+to merge your branch into a base branch.
+
+10. PULL REQUEST (PR)
+----------------------
+A pull request is a request to merge changes from one branch into a
+base branch, opened on GitHub so others can review and discuss the
+changes before they're merged. It combines several of the ideas
+above: a branch of commits, proposed to be pulled into a base branch.
+
+11. REQUEST
+-----------
+More broadly, a request is an ask directed at repository maintainers
+or collaborators to take an action. A pull request is the most common
+example, but the same word applies to other asks made of a project's
+maintainers, such as requesting a review or requesting access.
+
+SUMMARY
+-------
+Git tracks commits. Commits build up branches. One branch, main, is
+the primary line of work. A remote hosts branches so they can be
+shared. You pull to sync a remote branch locally. A base is what
+changes are compared or merged against, and a base branch is the
+specific branch your changes target. A pull request formalizes that
+merge as a reviewable request, the most common of many kinds of
+requests made on GitHub.
